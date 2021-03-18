@@ -21,7 +21,8 @@ module.exports = {
       template: 'frontend/app/index.html'
     }),
     new CopyPlugin([
-      { from : '_redirects' }
+      { from : '_redirects' },
+      { options: "none"}
     ])
   ],
   devServer: {
